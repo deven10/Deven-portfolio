@@ -87,18 +87,18 @@ nav{
 
 /* Section Part */
 
-#content{
+.content{
     display:flex;
     flex-direction: column;
     align-items: center;
     width:60%;
     margin:auto;
-    height:200vh;
+    height:100vh;
     background-color: antiquewhite;
 }
 
 img{
-    margin-top: 30px;
+    margin-top: 30%;
     height: 300px;
     width:450px;
     border-radius: 50%;
