@@ -11,10 +11,10 @@
 header{
     width: 100%;
     height: 14vh;
-    background-color: aquamarine;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color:#000080;
 }
 
 nav{
@@ -26,10 +26,10 @@ nav{
 }
 
 .logo{
-    background-color: rgb(1, 192, 255);
-    border: 2px solid rgb(42, 52, 61);
+    background-color:#1877F2;
     border-radius: 50%;
     padding: 5px 15px;
+    border: 3px solid rgb(255, 255, 255);
 }
 
 .logo-text{
@@ -38,19 +38,22 @@ nav{
     font-size: 30px;
     letter-spacing: 1.5px;
     text-decoration: none;
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+
 }
+
+/* If needed add transition on logo
 
 .logo-text:hover{
     transition: 0.5s ease-in-out;
     color:rgb(255, 255, 255);
 }
-
+*/
 .logo:hover{
     transition: 0.5s ease-in-out;
-    background-color: rgb(3, 154, 204);
-    border: 3px solid rgb(255, 255, 255);
+    background-color:#1C39BB;
 }
+
 
 .navbar{
     width: 40%;
@@ -66,15 +69,15 @@ nav{
 .navbar ul li{
     list-style: none;
     padding: 10px 20px;
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius: 10px;
     letter-spacing: 1px;
-    background-color: rgb(240, 145, 111);
+    background-color:#1877F2;
 }
 
 .navbar ul li:hover{
     transition: 0.5s ease-in;
-    background-color: rgb(252, 146, 54);
+    background-color: #1da1f2;
     cursor: pointer;
     border-radius: 0px;
 }
@@ -83,6 +86,7 @@ nav{
     text-decoration: none;
     color:white;
 }
+
 
 
 /* Section Part */
@@ -127,30 +131,71 @@ img{
 }
 
 .copyrights{
-    font-weight: 200;
+    font-weight: 900;
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     color:white;
+    letter-spacing: 0.5px;
 }
 
 .quick-links ul{
     display: flex;
     justify-items: center;
     align-items: center;
-    background-color: beige;
 }
 
 .quick-links ul li{
     list-style: none;
-    padding: 10px 15px;
+    padding: 10px 10px;
+
 }
 
 .quick-links ul a{
     text-decoration: none;
+    background-color:rgba(0,0,0,0.3);
+    border-radius: 50%;
+    color:white;
+    padding: 10px;
 }
 
-/* Responsive Design */
+/* Adding colors to Quick Links */
+.quick-links ul a:nth-child(1),a:hover{
+    transition: .5s ease;
+    text-decoration: none;
+    background-color:#1da1f2;
+    border-radius: 50%;
+    color:white;
+    padding: 10px;
+}
+.quick-links ul a:nth-child(2),a:hover{
+    transition: .5s ease;
+    text-decoration: none;
+    background-color:rgb(247, 86, 86);
+    border-radius: 50%;
+    color:white;
+    padding: 10px;
+}
+.quick-links ul a:hover,a:nth-child(3){
+    transition: .5s ease;
+    text-decoration: none;
+    background-color:white;
+    border-radius: 50%;
+    color:black;
+    padding: 10px;
+}
+.quick-links ul a:hover,a:nth-child(4){
+    transition: .5s ease;
+    text-decoration: none;
+    background-color:#3F00FF;
+    border-radius: 50%;
+    color:white;
+    padding: 10px;
+}
 
+
+
+/* Responsive Design */
+/*
 @media(max-width: 1090px) {
     nav{
        width:100%;
@@ -164,4 +209,4 @@ img{
        justify-content: space-between;
     }
 }
-
+*/
