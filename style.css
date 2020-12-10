@@ -150,8 +150,18 @@ nav{
     letter-spacing: 1px;
 }
 
+.section-border-bottom{
+    width:90%;
+    height: 5px;
+    background-color: black;
+    margin: auto;
+}
+
 /* PROJECTS SECTION */
 
+
+
+/* BLOGS SECTION */
 
 /* FOOTER PART */
 
