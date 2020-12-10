@@ -14,7 +14,8 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#000080;
+    background-color:#1e88e5;
+    border-bottom:2px solid #045daa;
 }
 
 nav{
@@ -39,11 +40,9 @@ nav{
     letter-spacing: 1.5px;
     text-decoration: none;
     color:rgb(255, 255, 255);
-
 }
 
 /* If needed add transition on logo
-
 .logo-text:hover{
     transition: 0.5s ease-in-out;
     color:rgb(255, 255, 255);
@@ -77,7 +76,7 @@ nav{
 
 .navbar ul li:hover{
     transition: 0.5s ease-in;
-    background-color: #1da1f2;
+    background-color: #03a9f4;
     cursor: pointer;
     border-radius: 0px;
 }
@@ -90,33 +89,69 @@ nav{
 
 
 /* Section Part */
-
 .content{
     display:flex;
     flex-direction: column;
     align-items: center;
-    width:60%;
+    width:100%;
     margin:auto;
     height:100vh;
-    background-color: antiquewhite;
+    background-color: #EBF9FE;
 }
 
-img{
+/* ABOUT SECTION */
+.about-section{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about-img img{
     margin-top: 15%;
-    height: 300px;
-    width:450px;
-    border-radius: 50%;
+    height: 400px;
+    width:500px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 50px;
 }
 
-#text{
-    text-align: center;
+.about-text{
+    border:3px solid #B0E7FD;
+    pointer-events: none;
+    text-emphasis: none;
+    border-radius: 10px;
+    padding: 20px 30px;
+    text-align: left;
     margin-top: 30px;
-    font-size:24px;
-    font-weight: 30;
-    line-height: 1.5rem;
-    text-decoration: underline;
+    line-height: 1.3rem; 
+}
+
+.about-title{
+    font-family: 'Courgette', cursive;
+    font-weight:500;
+    font-size:26px;
+    letter-spacing: 1.5px;
+}
+
+.about-description{
+    font-family: 'Quicksand', sans-serif;
+    font-weight:400;
+    font-size:22px;
     letter-spacing: .5px;
 }
+
+.about-description-bg{
+    background-color: #8BDCF9;
+    padding:3px 5px;
+    border: 2px solid #0A91C2;
+    border-radius:3px;
+    font-weight:700;
+    letter-spacing: 1px;
+}
+
+/* PROJECTS SECTION */
+
 
 /* FOOTER PART */
 
@@ -187,7 +222,6 @@ img{
        justify-content: space-around;
     }
   }
-
 @media(max-width: 950px) {
     nav{
        width:100%;
