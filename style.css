@@ -110,6 +110,7 @@ nav{
     margin-top: 15%;
     height: 400px;
     width:500px;
+    border:2px solid black;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 5px;
     border-top-left-radius: 5px;
@@ -119,7 +120,6 @@ nav{
 .about-text{
     border:3px solid #B0E7FD;
     pointer-events: none;
-    text-emphasis: none;
     border-radius: 10px;
     padding: 20px 30px;
     text-align: left;
