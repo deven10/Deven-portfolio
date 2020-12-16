@@ -10,7 +10,7 @@
 
 header{
     width: 100%;
-    height: 14vh;
+    height: 16vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,13 +23,13 @@ nav{
     justify-content: space-between;
     align-items: center;
     width: 80%;
-    height: 8vh;
+    height: 10vh;
 }
 
 .logo{
     background-color:#1877F2;
     border-radius: 50%;
-    padding: 5px 15px;
+    padding: 3px 15px;
     border: 3px solid rgb(255, 255, 255);
 }
 
@@ -150,6 +150,7 @@ nav{
     letter-spacing: 1px;
 }
 
+/* Bottom-Border between Sections */
 .section-border-bottom{
     width:90%;
     height: 5px;
@@ -159,9 +160,154 @@ nav{
 
 /* PROJECTS SECTION */
 
+#project{
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    padding: 50px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color:rgba(0,0,0,0.1);
+}
 
+.project{
+    width:55%;
+    height: 25vh;
+    background-color: #03a9f4;
+    margin:auto;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 1.8rem;
+    text-align: center;
+}
+
+#project-1,#project-2{
+    color: white;
+    letter-spacing: 1px;
+}
+
+.project-text{
+    font-size:1rem;
+}
+
+.project-btn{
+    width: 60%;
+    padding:10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#btn-project{
+    background-color: transparent;
+    border:2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin:auto;
+    width: 40%;
+    padding:5px;
+    font-size: 14px;
+}
+
+#btn-project:hover{
+        transition: 1s ease;
+        color:white;
+        border:2px solid white;
+        background-color: #03a9f4;
+        cursor: pointer;
+}
+
+.view-all-projects{
+    width:60%;
+    margin:10px;
+    padding:5px;
+    border-radius: 10px;
+    background-color: transparent;
+    font-weight: 700;
+    border:2px solid #03a9f4;
+}
+.view-all-projects:hover{
+    transition: 1s ease;
+    color:white;
+    border:2px solid white;
+    background-color: #03a9f4;
+    cursor: pointer;
+}
 
 /* BLOGS SECTION */
+#blog{
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    padding: 50px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color:rgba(0,0,0,0.1); 
+}
+
+.blogs{
+    width:55%;
+    height: 25vh;
+    background-color: #03a9f4;
+    margin:auto;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 1.8rem;
+    text-align: center;
+}
+.blogs:hover{
+    transition: 1s ease;
+    color:white;
+    border:2px solid white;
+    background-color: #03a9f4;
+    cursor: pointer;
+}
+
+#blog-1,#blog-2{
+    color: white;
+    letter-spacing: 1px;
+}
+
+.blog-title{
+    font-size:1.2rem;
+}
+
+#blog-read-more{
+    width: 60%;
+    padding:10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.read-all-blogs{
+    width:60%;
+    margin:10px;
+    padding:5px;
+    border-radius: 10px;
+    background-color: transparent;
+    font-weight: 700;
+    border:2px solid #03a9f4;
+}
+.read-all-blogs:hover{
+    transition: 1s ease;
+    color:white;
+    border:2px solid white;
+    background-color: #03a9f4;
+    cursor: pointer;
+}
 
 /* FOOTER PART */
 
