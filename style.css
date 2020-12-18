@@ -15,28 +15,30 @@ header{
     justify-content: center;
     align-items: center;
     background-color:#1e88e5;
-    border-bottom:2px solid #045daa;
+    border-bottom:.2rem solid #045daa;
 }
 
-nav{
+.nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 90%;
     height: 10vh;
 }
 
 .logo{
     background-color:#1877F2;
     border-radius: 50%;
-    padding: 3px 15px;
-    border: 3px solid rgb(255, 255, 255);
+    padding: .1rem 1.5rem;
+    border: .2rem solid rgb(255, 255, 255);
+
 }
 
 .logo-text{
     font-family: 'Cedarville Cursive', cursive;
     font-weight: 100;
-    font-size: 30px;
+    font-size: 1.8rem;
+    max-width:100%;
     letter-spacing: 1.5px;
     text-decoration: none;
     color:rgb(255, 255, 255);
@@ -67,7 +69,8 @@ nav{
 
 .navbar ul li{
     list-style: none;
-    padding: 10px 20px;
+    padding: .5rem 1rem;
+    margin-left:.7rem;
     border: 2px solid white;
     border-radius: 10px;
     letter-spacing: 1px;
@@ -106,22 +109,23 @@ nav{
     justify-content: space-evenly;
 }
 
-.about-img img{
+.about-img .profile-img{
     margin-top: 15%;
-    height: 400px;
-    width:500px;
+    height: 22rem;
+    width:25rem;
     border:2px solid black;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 5px;
     border-top-left-radius: 5px;
     border-top-right-radius: 50px;
+    max-width: 100%;
 }
 
 .about-text{
     border:3px solid #B0E7FD;
     pointer-events: none;
     border-radius: 10px;
-    padding: 20px 30px;
+    padding: 1.5rem 1rem;
     text-align: left;
     margin-top: 30px;
     line-height: 1.3rem; 
@@ -130,14 +134,14 @@ nav{
 .about-title{
     font-family: 'Courgette', cursive;
     font-weight:500;
-    font-size:26px;
+    font-size:1.6rem;
     letter-spacing: 1.5px;
 }
 
 .about-description{
     font-family: 'Quicksand', sans-serif;
     font-weight:400;
-    font-size:22px;
+    font-size:1.2rem;
     letter-spacing: .5px;
 }
 
@@ -164,7 +168,7 @@ nav{
     width: 80%;
     height: 80vh;
     margin: auto;
-    padding: 50px 80px;
+    padding: 1.1rem .5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -174,17 +178,17 @@ nav{
 }
 
 .project{
-    width:55%;
-    height: 25vh;
+    width:85%;
+    height: 28vh;
     background-color: #03a9f4;
     margin:auto;
-    padding: 20px;
+    padding: .2rem;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    line-height: 1.8rem;
+    line-height: 1.6rem;
     text-align: center;
 }
 
@@ -198,8 +202,8 @@ nav{
 }
 
 .project-btn{
-    width: 60%;
-    padding:10px;
+    width: 80%;
+    padding:.5rem;
     display: flex;
     justify-content: space-evenly;
 }
@@ -212,7 +216,8 @@ nav{
     margin:auto;
     width: 40%;
     padding:5px;
-    font-size: 14px;
+    font-size: 1rem;
+    color:white;
 }
 
 #btn-project:hover{
@@ -245,7 +250,6 @@ nav{
     width: 80%;
     height: 80vh;
     margin: auto;
-    padding: 50px 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -255,11 +259,11 @@ nav{
 }
 
 .blogs{
-    width:55%;
-    height: 25vh;
+    width:85%;
+    height: 28vh;
     background-color: #03a9f4;
     margin:auto;
-    padding: 20px;
+    padding: .2rem;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -283,6 +287,7 @@ nav{
 
 .blog-title{
     font-size:1.2rem;
+    line-height: 2.4rem;
 }
 
 #blog-read-more{
@@ -322,7 +327,7 @@ nav{
 
 .copyrights{
     font-weight: 900;
-    font-size: 20px;
+    font-size: 1rem;
     font-family: 'Times New Roman', Times, serif;
     color:white;
     letter-spacing: 0.5px;
@@ -337,7 +342,6 @@ nav{
 .links li{
     list-style: none;
     padding: 10px 10px;
-
 }
 
 .links li a{
@@ -371,17 +375,65 @@ nav{
 
 
 /* Responsive Design */
-/*
-@media(max-width: 1090px) {
-    nav{
-       width:100%;
-       justify-content: space-around;
+
+@media(max-width: 750px) {
+    .nav{
+        width: 90%;
+        max-width:100%;
     }
   }
-@media(max-width: 950px) {
-    nav{
-       width:100%;
-       justify-content: space-between;
+@media(max-width: 968px) {
+    .nav{
+        width: 80%;
+        justify-content: space-between;
+        max-width: 100%;;
+    }
+    .about-section{
+        flex-direction: column;
+        align-items: center;
+        height:120vh;
+        justify-content: center;
+    }
+  }
+@media(max-width: 550px) {
+    .nav{
+       width:90%;
+       justify-content: space-around;
+        max-width: 100%;
+    }
+    .logo{
+        padding:.4rem;
+    }
+    .logo-text{
+        font-size:1rem;
+    }
+    .navbar{
+        display:flex;
+        flex-direction: row;
+        width:65%;
+        font-size:.6rem;
+    }
+    .about-img .profile-img{
+        width: 16rem;
+        height: 18rem;
+    }
+    .about-text{
+        display:flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    .about-text .about-title{
+        font-size: 1.22rem;
+    }
+
+    .about-description{
+        font-size: .88rem;
+    }
+    .copyrights{
+        font-size: .3;
+    }
+    .links li{
+        list-style: none;
+        padding: .2rem .2rem;
     }
 }
-*/
