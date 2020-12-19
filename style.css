@@ -43,6 +43,9 @@ header{
     text-decoration: none;
     color:rgb(255, 255, 255);
 }
+.logo-text > a:visited{
+    color:white;
+}
 
 /* If needed add transition on logo
 .logo-text:hover{
@@ -198,7 +201,14 @@ header{
 }
 
 .project-text{
-    font-size:1rem;
+    line-height: 1.8rem;
+}
+
+.project-text h3{
+    font-size:1.3rem;
+}
+.project-text p{
+    font-size:1.1rem;
 }
 
 .project-btn{
@@ -218,6 +228,8 @@ header{
     padding:5px;
     font-size: 1rem;
     color:white;
+    text-align: center;
+    text-decoration: none;
 }
 
 #btn-project:hover{
@@ -232,10 +244,13 @@ header{
     width:60%;
     margin:10px;
     padding:5px;
+    text-decoration: none;
+    text-align: center;
     border-radius: 10px;
     background-color: transparent;
     font-weight: 700;
     border:2px solid #03a9f4;
+    color:black;
 }
 .view-all-projects:hover{
     transition: 1s ease;
@@ -245,17 +260,27 @@ header{
     cursor: pointer;
 }
 
+.projects-link{
+    color:black;
+    text-decoration: none;
+}
+/*.projects-link:hover{
+    transition: 1s ease;
+    color:white;
+}
+*/
 /* BLOGS SECTION */
 #blog{
     width: 80%;
     height: 80vh;
     margin: auto;
+    padding: 1.1rem .5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border-radius: 20px;
-    background-color:rgba(0,0,0,0.1); 
+    background-color:rgba(0,0,0,0.1);
 }
 
 .blogs{
@@ -267,10 +292,11 @@ header{
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    line-height: 1.8rem;
+    line-height: 1.6rem;
     text-align: center;
+    text-decoration:none;
 }
 .blogs:hover{
     transition: 1s ease;
@@ -285,17 +311,23 @@ header{
     letter-spacing: 1px;
 }
 
+.blogs a,.blogs a:visited{
+    color:black;
+}
+
 .blog-title{
     font-size:1.2rem;
     line-height: 2.4rem;
-}
-
-#blog-read-more{
+    text-decoration: none;
+    text-align: center;
+    color:#fff;
     width: 60%;
     padding:10px;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-evenly; 
 }
+
 
 .read-all-blogs{
     width:60%;
@@ -305,6 +337,9 @@ header{
     background-color: transparent;
     font-weight: 700;
     border:2px solid #03a9f4;
+    color:black;
+    text-decoration: none;
+    text-align: center;
 }
 .read-all-blogs:hover{
     transition: 1s ease;
@@ -313,6 +348,7 @@ header{
     background-color: #03a9f4;
     cursor: pointer;
 }
+
 
 /* FOOTER PART */
 
