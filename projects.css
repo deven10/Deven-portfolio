@@ -31,6 +31,7 @@ header{
     border-radius: 50%;
     padding: .1rem 1.5rem;
     border: .2rem solid rgb(255, 255, 255);
+
 }
 
 .logo-text{
@@ -46,12 +47,6 @@ header{
     color:white;
 }
 
-/* If needed add transition on logo
-.logo-text:hover{
-    transition: 0.5s ease-in-out;
-    color:rgb(255, 255, 255);
-}
-*/
 .logo:hover{
     transition: 0.5s ease-in-out;
     background-color:#1C39BB;
@@ -59,7 +54,7 @@ header{
 
 
 .navbar{
-    width: 40%;
+    width: 15%;
     color:white;
 }
 
@@ -72,6 +67,7 @@ header{
 .navbar ul li{
     list-style: none;
     padding: .5rem 1rem;
+    margin-left:.7rem;
     border: 2px solid white;
     border-radius: 10px;
     letter-spacing: 1px;
@@ -90,8 +86,6 @@ header{
     color:white;
 }
 
-
-
 /* Section Part */
 .content{
     display:flex;
@@ -99,83 +93,20 @@ header{
     align-items: center;
     width:100%;
     margin:auto;
-    height:100vh;
+    height:350vh;
     background-color: #EBF9FE;
 }
 
-/* ABOUT SECTION */
-.about-section{
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.about-img .profile-img{
-    margin-top: 15%;
-    height: 22rem;
-    width:25rem;
-    border:2px solid black;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 5px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 50px;
-    max-width: 100%;
-}
-
-.about-text{
-    border:3px solid #B0E7FD;
-    pointer-events: none;
-    border-radius: 10px;
-    padding: 1.5rem 1rem;
-    text-align: left;
-    margin-top: 30px;
-    line-height: 1.3rem; 
-}
-
-.about-title{
-    font-family: 'Courgette', cursive;
-    font-weight:500;
-    font-size:1.6rem;
-    letter-spacing: 1.5px;
-}
-
-.about-description{
-    font-family: 'Quicksand', sans-serif;
-    font-weight:400;
-    font-size:1.2rem;
-    letter-spacing: .5px;
-}
-
-.about-description-bg{
-    background-color: #8BDCF9;
-    padding:3px 5px;
-    border: 2px solid #0A91C2;
-    border-radius:3px;
-    font-weight:700;
-    letter-spacing: 1px;
-}
-
-/* Bottom-Border between Sections */
-.section-border-bottom{
-    width:90%;
-    height: 5px;
-    background-color: black;
-    margin: auto;
-}
-
 /* PROJECTS SECTION */
-
 #project{
     width: 80%;
-    height: 80vh;
+    height: 350vh;
     margin: auto;
     padding: 1.1rem .5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-radius: 20px;
-    background-color:rgba(0,0,0,0.1);
 }
 
 .project{
@@ -193,9 +124,9 @@ header{
     text-align: center;
 }
 
-#project-1,#project-2{
+#project-1,#project-2,#project-3,#project-4,#project-5,#project-6,#project-7,#project-8,#project-9,#project-10{
     color: white;
-    letter-spacing: 1px;
+    letter-spacing: 1px
 }
 
 .project-text{
@@ -208,28 +139,28 @@ header{
 .project-text p{
     font-size:1.1rem;
 }
-/*
+
 .project-btn{
     width: 80%;
     padding:.5rem;
     display: flex;
     justify-content: space-evenly;
 }
-*/
+
 #btn-project{
     background-color: transparent;
     border:2px solid white;
     border-radius: 5px;
     cursor: pointer;
-    margin:auto .5rem;
+    margin:auto;
     width: 40%;
-    padding:.5rem 2rem;
+    padding:5px;
     font-size: 1rem;
     color:white;
     text-align: center;
     text-decoration: none;
 }
-/*
+
 #btn-project:hover{
         transition: 1s ease;
         color:white;
@@ -237,130 +168,22 @@ header{
         background-color: #03a9f4;
         cursor: pointer;
 }
-*/
-.view-all-projects{
-    width:60%;
-    margin:10px;
-    padding:5px;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 10px;
-    background-color: transparent;
-    font-weight: 700;
-    border:2px solid #03a9f4;
-    color:black;
-}
-.view-all-projects:hover{
-    transition: 1s ease;
-    color:white;
-    border:2px solid white;
-    background-color: #03a9f4;
-    cursor: pointer;
-}
-
-.projects-link{
-    color:black;
-    text-decoration: none;
-}
-/*.projects-link:hover{
-    transition: 1s ease;
-    color:white;
-}
-*/
-/* BLOGS SECTION */
-#blog{
-    width: 80%;
-    height: 80vh;
-    margin: auto;
-    padding: 1.1rem .5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 20px;
-    background-color:rgba(0,0,0,0.1);
-}
-
-.blogs{
-    width:85%;
-    height: 28vh;
-    background-color: #03a9f4;
-    margin:auto;
-    padding: .2rem;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    line-height: 1.4rem;
-    text-align: center;
-    text-decoration:none;
-}
-.blogs:hover{
-    transition: 1s ease;
-    color:white;
-    border:2px solid white;
-    background-color: #03a9f4;
-    cursor: pointer;
-}
-
-#blog-1,#blog-2{
-    color: white;
-    letter-spacing: 1px;
-}
-
-.blogs a,.blogs a:visited{
-    color:black;
-}
-
-.blog-title{
-    font-size:1.2rem;
-    line-height: 2.4rem;
-    text-decoration: none;
-    text-align: center;
-    color:#fff;
-    width: 90%;
-    padding:10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; 
-}
-
-/*
-.read-all-blogs{
-    width:60%;
-    margin:10px;
-    padding:5px;
-    border-radius: 10px;
-    background-color: transparent;
-    font-weight: 700;
-    border:2px solid #03a9f4;
-    color:black;
-    text-decoration: none;
-    text-align: center;
-}
-.read-all-blogs:hover{
-    transition: 1s ease;
-    color:white;
-    border:2px solid white;
-    background-color: #03a9f4;
-    cursor: pointer;
-}
-*/
 
 /* FOOTER PART */
 
 #footer{
+    width:100%;
+    height:10vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width:100%;
-    height: 10vh;
     background-color: rgb(0, 126, 229,0.8);
+    bottom:0;
 }
+
 .footer-content{
     display: flex;
-    width: 80%;
+    width: 70%;
     justify-content: space-around;
     align-items: center;
 }
@@ -391,7 +214,7 @@ header{
     padding: 10px;
 }
 
-/* Adding colors to Quick Links */
+ /*Adding colors to Quick Links */
 
 .links li a:hover{
     transition: 0.5s ease;
@@ -413,8 +236,7 @@ header{
     background-color:#55acee;  
   }
 
-
-/* Responsive Design */
+  /* Responsive Design */
 
 /* Max width 968px */
 @media(max-width: 968px) {
@@ -549,13 +371,15 @@ header{
         width: 100%;
     }
     .logo-text{
-        font-size: .5rem;
+        font-size: .8rem;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .navbar{
-        width: 70%;
+        width: 40%;
+        align-items: flex-end;
+        background-color: blanchedalmond;
     }
     .navbar ul{
         width: 100%;
@@ -569,7 +393,10 @@ header{
     .project-btn{
         margin:.1rem auto;
     }
+    .footer-content{
+        width: 90%;
+    }
     .copyrights{
-        font-size: .6rem;
+        font-size: .7rem;
     }
 }

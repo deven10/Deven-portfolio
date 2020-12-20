@@ -1,0 +1,170 @@
+/* Basic Styling */
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Heading Part */
+
+header{
+    width: 100%;
+    height: 16vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#1e88e5;
+    border-bottom:.2rem solid #045daa;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 10vh;
+}
+
+.logo{
+    background-color:#1877F2;
+    border-radius: 50%;
+    padding: .1rem 1.5rem;
+    border: .2rem solid rgb(255, 255, 255);
+
+}
+
+.logo-text{
+    font-family: 'Cedarville Cursive', cursive;
+    font-weight: 100;
+    font-size: 1.8rem;
+    max-width:100%;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+.logo-text > a:visited{
+    color:white;
+}
+
+/* If needed add transition on logo
+.logo-text:hover{
+    transition: 0.5s ease-in-out;
+    color:rgb(255, 255, 255);
+}
+*/
+.logo:hover{
+    transition: 0.5s ease-in-out;
+    background-color:#1C39BB;
+}
+
+
+.navbar{
+    width: 40%;
+    color:white;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar ul li{
+    list-style: none;
+    padding: .5rem 1rem;
+    margin-left:.7rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    background-color:#1877F2;
+}
+
+.navbar ul li:hover{
+    transition: 0.5s ease-in;
+    background-color: #03a9f4;
+    cursor: pointer;
+    border-radius: 0px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+/* Section Part */
+h1{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    margin:auto;
+    height:100vh;
+    background-color: #EBF9FE;
+}
+
+
+/* FOOTER PART */
+
+#footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    height: 10vh;
+    background-color: rgb(0, 126, 229,0.8);
+}
+.footer-content{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.copyrights{
+    font-weight: 900;
+    font-size: 1.2rem;
+    color:white;
+    letter-spacing: 0.5px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.links{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.links li{
+    list-style: none;
+    padding: 5px 5px;
+}
+
+.links li a{
+    text-decoration: none;
+    border-radius: 50%;
+    color:white;
+    padding: 10px;
+}
+
+/* Adding colors to Quick Links */
+
+.links li a:hover{
+    transition: 0.5s ease;
+}
+
+.links li:nth-child(1) a:hover{
+    background-color:#3b5998;
+   }
+
+.links li:nth-child(2) a:hover{
+     background-color:#e4405f;
+   }
+
+.links li:nth-child(3) a:hover{
+     background-color:#070707;  
+   }
+
+.links li:nth-child(4) a:hover{
+    background-color:#55acee;  
+  }
