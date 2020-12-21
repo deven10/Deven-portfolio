@@ -22,7 +22,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 75%;
     height: 10vh;
 }
 
@@ -54,7 +54,7 @@ header{
 
 
 .navbar{
-    width: 15%;
+    width: 20%;
     color:white;
 }
 
@@ -99,7 +99,7 @@ header{
 
 /* PROJECTS SECTION */
 #project{
-    width: 80%;
+    width: 90%;
     height: 350vh;
     margin: auto;
     padding: 1.1rem .5rem;
@@ -110,11 +110,11 @@ header{
 }
 
 .project{
-    width:85%;
+    width:60%;
     height: 28vh;
     background-color: #03a9f4;
     margin:auto;
-    padding: .2rem;
+    padding: .5rem;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -183,7 +183,7 @@ header{
 
 .footer-content{
     display: flex;
-    width: 70%;
+    width: 80%;
     justify-content: space-around;
     align-items: center;
 }
@@ -246,7 +246,7 @@ header{
         max-width: 100%;;
     }
     .navbar{
-        width: 60%;
+        width: 20%;
     }
     .about-section{
         flex-direction: column;
@@ -262,29 +262,198 @@ header{
     }
   }
 
-/* Max width 750px */
-@media(max-width: 750px) {
+/* Max width 775px */
+@media(max-width: 775px) {
     .nav{
-        width: 100%;
-        justify-content: space-around;
-        max-width:100%;
+       width:100%;
+       justify-content: space-around;
+       max-width: 100%;
+    }
+    .logo{
+        padding:.6rem;
+    }
+    .logo-text{
+        font-size:1.5rem;
     }
     .navbar{
-        width: 50%;
+        width:20%;
+        font-size:1rem;
+    }
+    /* content */
+    .project-text{
+        line-height: 1.5rem;
+        padding:1rem;
+    }
+
+    .project-text h3{
+        font-size: 1.2rem;
+    }
+    .project-text p{
+        font-size: .9rem;
+    }
+    .project{
+        width:80%;
+        padding: .3rem;
+        line-height: 1.3rem;
+        font-size: 1rem;
+    }
+    .project-btn{
+        width: 70%;
+        margin:.1rem auto;            
+    }
+    #btn-project{
+        width: 60%;
+        font-size: .8rem;
+        padding:.2rem .3rem;
+        margin:auto .7rem;
+    }
+
+    .blog-title{
+        line-height: 1.1rem;
+    }
+    .blog-title h3{
+        font-size: .8rem;
+    }
+    .blog-title p{
+        font-size: .6rem;
+    }
+    /* Footer */
+    .copyrights{
+        font-size: 1.1rem;
+    }
+    .links li{
+        padding: .2rem .2rem;
+    }
+}
+
+/* Max width 750px */
+@media(max-width: 749px) {
+    .nav{
+       width:100%;
+       justify-content: space-around;
+       max-width: 100%;
+    }
+    .logo{
+        padding:.4rem;
+    }
+    .logo-text{
+        font-size:1.5rem;
+    }
+    .navbar{
+        width:20%;
+        font-size:1rem;
+    }
+    /* content */
+    .project-text{
+        line-height: 1.5rem;
+        padding:1rem;
+    }
+
+    .project-text h3{
+        font-size: 1.2rem;
+    }
+    .project-text p{
+        font-size: .9rem;
+    }
+    .project{
+        width:90%;
+        padding: .3rem;
+        line-height: 1.3rem;
+        font-size: 1rem;
     }
     .project-btn{
         width: 80%;
-        justify-content: space-around;
-        margin:1rem auto;
+        margin:.1rem auto;            
+    }
+    #btn-project{
+        width: 60%;
+        font-size: .8rem;
+        padding:.2rem .3rem;
+        margin:auto .5rem;
     }
 
-    #btn-project{
-        width: 40%;
-        font-size: 1.2rem;
-        padding:.5rem;
-        margin: auto .5rem;
+    .blog-title{
+        line-height: 1.1rem;
     }
-  }
+    .blog-title h3{
+        font-size: .8rem;
+    }
+    .blog-title p{
+        font-size: .6rem;
+    }
+    /* Footer */
+    .copyrights{
+        font-size: 1rem;
+    }
+    .links li{
+        padding: .2rem .2rem;
+    }
+}
+
+
+/* Max width 749px */
+@media(max-width: 749px) {
+    .nav{
+       width:100%;
+       justify-content: space-around;
+       max-width: 100%;
+    }
+    .logo{
+        padding:.4rem;
+    }
+    .logo-text{
+        font-size:1.5rem;
+    }
+    .navbar{
+        width:20%;
+        font-size:1rem;
+    }
+    /* content */
+    .project-text{
+        line-height: 1.5rem;
+        padding:1rem;
+    }
+
+    .project-text h3{
+        font-size: 1.2rem;
+    }
+    .project-text p{
+        font-size: .9rem;
+    }
+    .project{
+        width:90%;
+        padding: .3rem;
+        line-height: 1.3rem;
+        font-size: 1rem;
+    }
+    .project-btn{
+        width: 80%;
+        margin:.1rem auto;            
+    }
+    #btn-project{
+        width: 60%;
+        font-size: .8rem;
+        padding:.2rem .3rem;
+        margin:auto .5rem;
+    }
+
+    .blog-title{
+        line-height: 1.1rem;
+    }
+    .blog-title h3{
+        font-size: .8rem;
+    }
+    .blog-title p{
+        font-size: .6rem;
+    }
+    /* Footer */
+    .copyrights{
+        font-size: 1rem;
+    }
+    .links li{
+        padding: .2rem .2rem;
+    }
+}
 
 /* Max width 500px */
 @media(max-width: 500px) {
@@ -297,53 +466,39 @@ header{
         padding:.4rem;
     }
     .logo-text{
-        font-size:.8rem;
+        font-size:1.3rem;
     }
     .navbar{
-        width:60%;
-        font-size:.5rem;
+        width:30%;
+        font-size:.9rem;
     }
     /* content */
-    .about-img .profile-img{
-        width: 16rem;
-        height: 18rem;
-    }
-    .about-text{
-        display:flex;
-        flex-direction: column;
-        width: 80%;
-    }
-    .about-text .about-title{
-        font-size: 1.20rem;
-    }
-
-    .about-description{
-        font-size: .8rem;
-    }
-    .about-description-bg{
-        font-size: .7rem;
-    }
     .project-text{
-        line-height: 1.1rem;
+        line-height: 1.5rem;
+        padding:1rem;
     }
 
     .project-text h3{
-        font-size: .8rem;
+        font-size: 1.2rem;
     }
     .project-text p{
-        font-size: .6rem;
+        font-size: .9rem;
+    }
+    .project{
+        width:90%;
+        padding: .3rem;
+        line-height: 1.3rem;
+        font-size: 1rem;
     }
     .project-btn{
         width: 80%;
-        display: flex;
-        flex-direction: row;
+        margin:.1rem auto;            
     }
-
     #btn-project{
-        width: 40%;
-        font-size: .6rem;
-        padding:.2rem;
-        margin:.2rem auto;   
+        width: 60%;
+        font-size: .8rem;
+        padding:.2rem .3rem;
+        margin:auto .5rem;
     }
 
     .blog-title{
@@ -371,32 +526,112 @@ header{
         width: 100%;
     }
     .logo-text{
-        font-size: .8rem;
+        font-size: 1.1rem;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .navbar{
-        width: 40%;
-        align-items: flex-end;
-        background-color: blanchedalmond;
+        width: 20%;
+        font-size:.7rem;
     }
     .navbar ul{
         width: 100%;
     }
-    .about-description{
+    /* content */
+    .project-text{
+        line-height: 1.2rem;
+        padding:.9rem;
+    }
+
+    .project-text h3{
+        font-size: 1rem;
+    }
+    .project-text p{
         font-size: .7rem;
     }
-    .about-description-bg{
-        font-size: .5rem;
+    .project{
+        width:90%;
+        padding: .3rem;
+        line-height: 1.3rem;
     }
     .project-btn{
+        width: 80%;
         margin:.1rem auto;
     }
+    #btn-project{
+        width: 60%;
+        font-size: .6rem;
+        padding:.2rem .3rem;
+        margin:auto .5rem;
+    }
+
     .footer-content{
-        width: 90%;
+        width: 100%;
+    }
+    .copyrights{
+        font-size: .8rem;
+    }
+    .links li{
+        padding: .1rem .1rem;
+    }
+}
+
+@media(max-width: 329px){
+    .nav{
+        width: 100%;
+    }
+    .logo-text{
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar{
+        width: 25%;
+        font-size:.6rem;
+    }
+    .navbar ul{
+        width: 100%;
+    }
+    /* content */
+    .project-text{
+        line-height: 1.2rem;
+        padding:.9rem;
+    }
+
+    .project-text h3{
+        font-size: 1rem;
+    }
+    .project-text p{
+        font-size: .7rem;
+    }
+    .project{
+        width:100%;
+        padding: .3rem;
+        line-height: 1.3rem;
+    }
+    .project-btn{
+        width: 80%;
+        margin:.1rem auto;
+    }
+    #btn-project{
+        width: 60%;
+        font-size: .6rem;
+        padding:.2rem .3rem;
+        margin:auto .5rem;
+    }
+
+    .footer-content{
+        width: 100%;
     }
     .copyrights{
         font-size: .7rem;
+    }
+    .links{
+         width: 60%;
+    }
+    .links li{
+        padding: .05rem .05rem;
     }
 }

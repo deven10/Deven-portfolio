@@ -229,15 +229,16 @@ header{
     text-align: center;
     text-decoration: none;
 }
-/*
+
 #btn-project:hover{
         transition: 1s ease;
         color:white;
         border:2px solid white;
-        background-color: #03a9f4;
+        background-color: #1877F2;
         cursor: pointer;
+        border-radius:0px;
 }
-*/
+
 .view-all-projects{
     width:60%;
     margin:10px;
