@@ -200,6 +200,7 @@ header{
 
 .project-text{
     line-height: 1.8rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 .project-text h3{
@@ -242,10 +243,11 @@ header{
 .view-all-projects{
     width:60%;
     margin:10px;
+    font-family: 'Roboto', sans-serif;
     padding:5px;
     text-decoration: none;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: transparent;
     font-weight: 700;
     border:2px solid #03a9f4;
@@ -257,6 +259,7 @@ header{
     border:2px solid white;
     background-color: #03a9f4;
     cursor: pointer;
+    border-radius: 0px;
 }
 
 .projects-link{
@@ -316,6 +319,7 @@ header{
 
 .blog-title{
     font-size:1.2rem;
+    font-family: 'Roboto', sans-serif;
     line-height: 2.4rem;
     text-decoration: none;
     text-align: center;
@@ -550,7 +554,7 @@ header{
         width: 100%;
     }
     .logo-text{
-        font-size: .5rem;
+        font-size: .7rem;
         display: flex;
         justify-content: center;
         align-items: center;
