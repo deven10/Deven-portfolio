@@ -75,25 +75,23 @@ header{
 
 .navbar ul li{
     list-style: none;
-    padding: .5rem 1rem;
-    border: 2px solid white;
-    border-radius: 10px;
-    letter-spacing: 1px;
-    background-color:#1877F2;
-}
-
-.navbar ul li:hover{
-    transition: 0.5s ease-in;
-    background-color: #03a9f4;
-    cursor: pointer;
-    border-radius: 0px;
 }
 
 .navbar ul li a{
     text-decoration: none;
     color:white;
+    background-color: transparent;
+    padding: .5rem 1rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
 }
-
+.navbar ul li a:hover{
+    border-radius: 0px;
+    transition: 0.5s ease-in;
+    background-color:#1877F2;
+}
 
 
 /* Section Part */
