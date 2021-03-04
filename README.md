@@ -1,4 +1,4 @@
 # Deven-portfolio
 
-<a href="https://deven-portfolio.netlify.app/">VIEW WORKING</a>
+<a target="_blank" href="https://deven-portfolio.netlify.app/">VIEW WORKING</a>
 
