@@ -19,7 +19,7 @@
     </head>
     <body>
         <!-- Header Part -->
-        <header>
+        <header class="header" id="header">
             <nav class="nav">
                 <div class="logo">
                     <a class="logo-text" href="#">devWorks</a>
@@ -30,6 +30,14 @@
                         <li class="links"><a class="link" href="#PROJECTS">PROJECTS</a></li>
                         <li class="links"><a class="link" href="#BLOGS">BLOGS</a></li>
                     </ul>
+                    <div class="theme_changer">
+                        <input type="checkbox" id="checkbox" class="checkbox" />
+                        <label for="checkbox" class="label" id="label">
+                            <i class="fa fa-moon-o moon" aria-hidden="true"></i>
+                            <i class="fa fa-sun-o sun" aria-hidden="true"></i>
+                            <div class="ball"></div>
+                        </label>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -47,7 +55,7 @@
                    <p class="about-description">Willing to be a <span class="about-description-bg"> FULL STACK DEVELOPER</span></p>
                 </div>
             </section>
-            <hr class="section-border-bottom">
+            <hr id="section-border-bottom" class="section-border-bottom">
 
             <!-- PROJECTS PAGE -->
             <section id="PROJECTS" class="content">
@@ -122,5 +130,6 @@
                 </div>
             </section>
         </footer>
+        <script src="app.js"></script>
     </body>
 </html>
