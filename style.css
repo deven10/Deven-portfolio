@@ -205,12 +205,18 @@ html{
     font-size:1.6rem;
     letter-spacing: 1.5px;
 }
+.aboutTitleDark{
+    color:white;
+}
 
 .about-description{
     font-family: 'Quicksand', sans-serif;
     font-weight:400;
     font-size:1.2rem;
     letter-spacing: .5px;
+}
+.aboutDescriptionDark{
+    color:white;
 }
 
 .about-description-bg{
@@ -235,7 +241,7 @@ html{
 
 /* PROJECTS SECTION */
 
-#project{
+.project{
     width: 80%;
     height: 80vh;
     margin: auto;
@@ -247,8 +253,11 @@ html{
     border-radius: 20px;
     background-color:rgba(0,0,0,0.1);
 }
+.projectDark{
+    background-color:rgba(255,255,255,0.1);
+}
 
-.project{
+.projects{
     width:85%;
     height: 28vh;
     background-color: #03a9f4;
@@ -310,7 +319,7 @@ html{
         border-radius:0px;
 }
 
-.view-all-projects{
+.viewAllProjects, .viewAllBlogs{
     width:60%;
     margin:10px;
     font-family: 'Roboto', sans-serif;
@@ -323,7 +332,11 @@ html{
     border:2px solid #03a9f4;
     color:black;
 }
-.view-all-projects:hover{
+.viewAllProjectsDark, .viewAllBlogsDark{
+    color:white;
+}
+.viewAllProjects:hover, .viewAllProjectsDark:hover, 
+.viewAllBlogs:hover, .viewAllBlogsDark:hover{
     transition: 1s ease;
     color:white;
     border:2px solid white;
@@ -331,6 +344,7 @@ html{
     cursor: pointer;
     border-radius: 0px;
 }
+
 
 .projects-link{
     color:black;
@@ -342,7 +356,7 @@ html{
 }
 */
 /* BLOGS SECTION */
-#blog{
+.blog{
     width: 80%;
     height: 80vh;
     margin: auto;
@@ -353,6 +367,10 @@ html{
     flex-direction: column;
     border-radius: 20px;
     background-color:rgba(0,0,0,0.1);
+}
+
+.blogDark{
+    background-color:rgba(255,255,255,0.1);
 }
 
 .blogs{
