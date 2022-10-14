@@ -93,14 +93,14 @@ header{
     align-items: center;
     width:100%;
     margin:auto;
-    height:350vh;
+    height:450vh;  /*auto to be use*/
     background-color: #EBF9FE;
 }
 
 /* PROJECTS SECTION */
 #project{
     width: 90%;
-    height: 350vh;
+    height: 450vh; /*auto to be use*/
     margin: auto;
     padding: 1.1rem .5rem;
     display: flex;
@@ -122,12 +122,14 @@ header{
     align-items: center;
     line-height: 1.6rem;
     text-align: center;
-}
-
-#project-1,#project-2,#project-3,#project-4,#project-5,#project-6,#project-7,#project-8,#project-9,#project-10{
     color: white;
     letter-spacing: 1px
 }
+/*
+#project-1,#project-2,#project-3,#project-4,#project-5,#project-6,#project-7,#project-8,#project-9,#project-10{
+    color: white;
+    letter-spacing: 1px
+}*/
 
 .project-text{
     font-family: 'Roboto', sans-serif;
