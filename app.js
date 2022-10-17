@@ -12,6 +12,8 @@ const viewAllProjects = document.getElementById("viewAllProjects");
 const viewAllBlogs = document.getElementById("viewAllBlogs");
 const blog = document.getElementById("blog");
 const project = document.getElementById("project");
+const resume = document.querySelector(".resume_file");
+
 
 
 checkbox.addEventListener("change", () => {
@@ -28,4 +30,5 @@ checkbox.addEventListener("change", () => {
     viewAllBlogs.classList.toggle("viewAllBlogsDark");
     blog.classList.toggle("blogDark");
     project.classList.toggle("projectDark");
+    resume.classList.toggle("resume_fileDark");
 })
