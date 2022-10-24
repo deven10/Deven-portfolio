@@ -4,7 +4,7 @@ const header = document.getElementById("header");
 const projectSection = document.getElementById("PROJECTS");
 const blogSection = document.getElementById("BLOGS");
 const aboutSection = document.getElementById("ABOUT");
-const lineBreak = document.querySelectorAll("sectionBorderBottom");
+const lineBreak = document.getElementsByClassName(".sectionBorderBottom");
 const profileImg = document.getElementById("profileImg");
 const aboutTitle = document.getElementById("about-title");
 const aboutDescription = document.getElementById("about-description");
@@ -13,6 +13,7 @@ const viewAllBlogs = document.getElementById("viewAllBlogs");
 const blog = document.getElementById("blog");
 const project = document.getElementById("project");
 const resume = document.querySelector(".resume_file");
+// const main = document.getElementById("main");
 
 
 
@@ -22,7 +23,6 @@ checkbox.addEventListener("change", () => {
     projectSection.classList.toggle("contentDark");
     blogSection.classList.toggle("contentDark");
     aboutSection.classList.toggle("contentDark");
-    //lineBreak.classList.toggle("sectionBorderBottomDark");
     profileImg.classList.toggle("profileImgDark");
     aboutTitle.classList.toggle("aboutTitleDark");
     aboutDescription.classList.toggle("aboutDescriptionDark");
@@ -31,4 +31,6 @@ checkbox.addEventListener("change", () => {
     blog.classList.toggle("blogDark");
     project.classList.toggle("projectDark");
     resume.classList.toggle("resume_fileDark");
+    lineBreak.classList.toggle("sectionBorderBottomDark");
+    // main.classList.toggle("mainDark");
 })
