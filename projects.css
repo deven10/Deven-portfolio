@@ -26,15 +26,14 @@ header{
     height: 10vh;
 }
 
-.logo{
+/* .logo{
     background-color:#1877F2;
     border-radius: 50%;
     padding: .1rem 1.5rem;
     border: .2rem solid rgb(255, 255, 255);
+} */
 
-}
-
-.logo-text{
+/* .logo-text{
     font-family: 'Cedarville Cursive', cursive;
     font-weight: 100;
     font-size: 1.8rem;
@@ -45,11 +44,29 @@ header{
 }
 .logo-text > a:visited{
     color:white;
-}
+} */
 
-.logo:hover{
+/* .logo:hover{
     transition: 0.5s ease-in-out;
     background-color:#1C39BB;
+} */
+
+.logo-img{
+    padding: 10px 15px;
+    height: 100px;
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* background-repeat: no-repeat;
+    background-color: yellow; */
+    cursor: pointer;
+}
+/* If needed add transition on logo */
+.logo-img:hover{
+    transition: 0.5s ease-in-out;
+    /* color:rgb(255, 255, 255); */
+    box-shadow: rgb(226, 230, 235) 0px 20px 30px -10px;
 }
 
 .navbar{
