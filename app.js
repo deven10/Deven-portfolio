@@ -15,6 +15,11 @@ const project = document.getElementById("project");
 const resume = document.querySelector(".resume_file");
 // const main = document.getElementById("main");
 
+let burger = document.querySelector(".burger");
+let ul = document.querySelector(".ul");
+burger.addEventListener("click", function(){
+    ul.classList.toggle("open");
+});
 
 
 checkbox.addEventListener("change", () => {
