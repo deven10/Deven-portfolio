@@ -619,18 +619,19 @@ html{
         left:0%;
     } 
 
+    .navbar .ul .links .link{
+        text-decoration: none;
+        color:white;
+        background-color: transparent;
+        padding: .5rem 1rem;
+        border: 2px solid white;
+        border-radius: 10px;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+
     /* 
 
-    .navbar .ul{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 80%;
-}
-
-    .navbar .ul .links{
-        list-style: none;
-    }
 
     .navbar .ul .links .link{
         text-decoration: none;
