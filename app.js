@@ -15,6 +15,34 @@ const project = document.getElementById("project");
 const resume = document.querySelector(".resume_file");
 // const main = document.getElementById("main");
 
+let burger = document.getElementById("burger");
+let ul = document.getElementById("ul");
+let link = document.getElementsByClassName("link");
+burger.addEventListener("click", function(){
+    ul.classList.toggle("open");
+});
+
+window.addEventListener('click', function(e){
+    if (!document.getElementById('ul').contains(e.target) && (!document.getElementById('burger').contains(e.target))){
+     ul.classList.remove("open"); //the same code you've used to hide the menu
+  } 
+})
+
+// document.addEventListener("click", function(event) {
+//     if (event.target.classList.contains("burger")) {
+//       ul.classList.toggle("open");
+//     } else if (event.target.classList.contains("link")) {
+//       ul.classList.remove("show");
+//     }
+//   });
+
+// window.addEventListener("click", function(e){
+//     if(e.target.id !== "burger" && e.target.id !== "ul"){
+//         // console.log("true correct");
+//         ul.classList.remove("open");
+//     }
+// });
+
 
 
 checkbox.addEventListener("change", () => {

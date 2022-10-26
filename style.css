@@ -6,12 +6,16 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow-x: hidden;
+}
+
+/* Added smooth scroll behaviour */
 html{
     scroll-behavior: smooth;
 }
 
 /* Heading Part */
-
 .header{
     width: 100%;
     height: 16vh;
@@ -22,28 +26,24 @@ html{
     border-bottom:.2rem solid #045daa;
 }
 
-
+/* when dark theme applied a bottom border is active on header */
 .headerDark{
     /*background-color: black;*/
     border-bottom:.2rem solid white;
 }
 
-/* NAVBAR */
+/* NAVBAR styling*/
+/* Nav element */
 .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 90%;
     height: 10vh;
+    /* background-color: pink; */
 }
 
-/* .logo{
-    background-color:#1877F2;
-    border-radius: 50%;
-    padding: .1rem 1.5rem;
-    border: .2rem solid rgb(255, 255, 255);
-} */
-
+/* logo image */
 .logo-img{
     padding: 10px 15px;
     height: 100px;
@@ -51,35 +51,24 @@ html{
     border-radius: 50%;
     border: 3px solid white;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    /* background-repeat: no-repeat;
-    background-color: yellow; */
+    /* background-color: yellow;  */
     cursor: pointer;
 }
 
-
-/* .logo-text > a:visited{
-    color:white;
-} */
-
-/* If needed add transition on logo */
+/* Box shadow on the logo image on hover */
 .logo-img:hover{
     transition: 0.5s ease-in-out;
-    /* color:rgb(255, 255, 255); */
     box-shadow: rgb(226, 230, 235) 0px 20px 30px -10px;
 }
 
-/* .logo:hover{
-    transition: 0.5s ease-in-out;
-    background-color:#1C39BB;
-} */
-
-
+/* Navbar element */
 .navbar{
     width: 50%;
     color:white;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    /* background-color: yellow; */
 }
 
 .navbar .ul{
@@ -158,10 +147,21 @@ html{
     transform: translateX(24px);
   }
 
+  /* Responsive Toggle button */
+  .burger{
+    position:absolute;
+    display:none;
+    right:20px;
+    height:50px;
+    line-height:50px;
+    font-size: 32px;
+    color:white;
+    cursor:pointer;
+  }
+
 /* MAIN */
 .main{
     background-color: #EBF9FE;
-    /* background-color: green; */
 }
 
 .mainDark{
@@ -169,6 +169,7 @@ html{
     background-color: red;
     color: blue;
 }
+
 /* Section Part */
 .content{
     display:flex;
@@ -190,6 +191,7 @@ html{
     justify-content: space-evenly;
 }
 
+/* About image */
 .profileImg{
     height: 450px;
     width:350px;
@@ -206,6 +208,7 @@ html{
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
 
+/* About content */
 .wrapper{
     padding: 10px 20px;
     display: block;
@@ -214,6 +217,7 @@ html{
     align-items: flex-start; */
 }
 
+/* Resume Link */
 .resume_file{
     margin-top: 30px;
     border: 2px solid black;
@@ -222,13 +226,6 @@ html{
     rgba(0, 0, 0, 0.12) 0px 4px 6px, 
     rgba(0, 0, 0, 0.17) 0px 12px 13px, 
     rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
-    /* box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, 
-    rgba(255, 255, 255, 0.12) 0px -12px 30px, 
-    rgba(255, 255, 255, 0.12) 0px 4px 6px, 
-    rgba(255, 255, 255, 0.17) 0px 12px 13px, 
-    rgba(255, 255, 255, 0.09) 0px -3px 5px; */
-    
     width: 50%;
     text-align: center;
     background-color: transparent;
@@ -297,17 +294,18 @@ html{
     letter-spacing: 1px;
 }
 
+/* Designing Line Divider between Sections */
 
 .sectionBorderBottom{
     width: 80%;
+    border:3px;
     height: 5px;
     background-color: black;
     margin: auto;
-    border: none;
     box-shadow: none;
 }
 .sectionBorderBottomDark{
-    background-color: white;
+    border:3px solid white;
 }
 
 /* PROJECTS SECTION */
@@ -359,14 +357,7 @@ html{
 .project-text p{
     font-size:1.1rem;
 }
-/*
-.project-btn{
-    width: 80%;
-    padding:.5rem;
-    display: flex;
-    justify-content: space-evenly;
-}
-*/
+
 #btn-project{
     background-color: transparent;
     border:2px solid white;
@@ -421,11 +412,7 @@ html{
     color:black;
     text-decoration: none;
 }
-/*.projects-link:hover{
-    transition: 1s ease;
-    color:white;
-}
-*/
+
 /* BLOGS SECTION */
 .blog{
     width: 80%;
@@ -490,27 +477,6 @@ html{
     justify-content: space-evenly; 
 }
 
-/*
-.read-all-blogs{
-    width:60%;
-    margin:10px;
-    padding:5px;
-    border-radius: 10px;
-    background-color: transparent;
-    font-weight: 700;
-    border:2px solid #03a9f4;
-    color:black;
-    text-decoration: none;
-    text-align: center;
-}
-.read-all-blogs:hover{
-    transition: 1s ease;
-    color:white;
-    border:2px solid white;
-    background-color: #03a9f4;
-    cursor: pointer;
-}
-*/
 
 /* FOOTER PART */
 
@@ -586,12 +552,12 @@ html{
         width: 95%;
         justify-content: space-between;
         max-width: 100%;
-        background-color: pink;
+        /* background-color: pink; */
     }
     .navbar{
         width: 65%;
         text-align: right;
-        background-color: green;
+        /* background-color: green; */
     }
     .about-section{
         flex-direction: column;
@@ -608,100 +574,109 @@ html{
     #btn-project{
         width: 40%;
         font-size: 1.2rem;
-        padding:.5rem;
+        padding:.5rem 2rem;
         margin: auto .5rem;
     }
   }
 
+  /* Max width 890px
   @media(max-width: 890px){
     .nav{
         width: 95%;
         justify-content: space-between;
-        /* max-width: 100%; */
-        background-color: pink;
     }
     .navbar{
         text-align: right;
-        width: 65%;
-        background-color: green;
     }
     
-  }
+  } */
 
 /* Max width 750px */
 @media(max-width: 750px) {
     .nav{
-        width: 95%;
+        width: 85%;
         justify-content: space-between;
-        /* max-width:100%; */
     }
-    .navbar{
-        text-align: right;
-        width: 65%;
-        background-color: green;
-        justify-content: end;
+    .ul{
+        display:flex;
+        flex-direction: column;
+        position:absolute;
+        margin-bottom: 10px;
+         /* justify-content: space-around; */
+        /* align-items: center; */
+        /* background-color: red; */
+        background-color: #045daa;
+        opacity: 0.9;
+        z-index: 2;
+        left:-100%;
+        top:16vh;
+        width:60%;
+        height:calc(100vh - 16vh);
+        transition:1s ease;
     }
-    .navbar .ul{
+
+    .ul.open{
+        left:0%;
+    } 
+
+    .navbar .ul .links .link{
+        text-decoration: none;
+        color:white;
+        background-color: transparent;
+        padding: 1rem 2rem;
+        border: 2px solid white;
+        border-radius: 10px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        font-size: 26px;
+        box-shadow: rgba(255, 255, 255, 0.25) 0px 25px 50px -12px;
+    }
+
+    /* 
+
+
+    .navbar .ul .links .link{
+        text-decoration: none;
+        color:white;
+        background-color: transparent;
+        padding: .5rem 1rem;
+        border: 2px solid white;
+        border-radius: 10px;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+
+    .navbar .ul .links .link:hover{
+        border-radius: 0px;
+        transition: 0.5s ease-in;
+        background-color:#1877F2;
+    }
+        
+    */
+
+
+    /* .navbar .ul{
         justify-content: space-evenly;
         width: 80%;
-        background-color: red;
+    } */
+
+    .theme_changer{
+        margin-right: 40px;
     }
 
-    .project-btn{
-        width: 80%;
-        justify-content: space-around;
-        margin:1rem auto;
+    .burger{
+        display: block;
+        z-index: 100;
     }
 
-    #btn-project{
-        width: 40%;
-        font-size: 1.2rem;
-        padding:.5rem;
-        margin: auto .5rem;
-    }
   }
 
-  
-/* 
-.navbar{
-    width: 50%;
-    color:white;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.navbar .ul{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 80%;
-}
-
-.navbar .ul .links{
-    list-style: none;
-}
-
-.navbar .ul .links .link{
-    text-decoration: none;
-    color:white;
-    background-color: transparent;
-    padding: .5rem 1rem;
-    border: 2px solid white;
-    border-radius: 10px;
-    letter-spacing: 1px;
-    cursor: pointer;
-}
-
-.navbar .ul .links .link:hover{
-    border-radius: 0px;
-    transition: 0.5s ease-in;
-    background-color:#1877F2;
-}
-*/
+  @media(max-width: 750px){
+    
+  }
 
 /* Max width 500px */
-@media(max-width: 500px) {
+/* @media(max-width: 500px) {
     .nav{
        width:100%;
        justify-content: space-around;
@@ -710,14 +685,10 @@ html{
     .logo{
         padding:.4rem;
     }
-    .logo-text{
-        font-size:.8rem;
-    }
     .navbar{
         width:60%;
         font-size:.5rem;
     }
-    /* content */
     .about-img .profile-img{
         width: 16rem;
         height: 18rem;
@@ -769,7 +740,6 @@ html{
     .blog-title p{
         font-size: .6rem;
     }
-    /* Footer */
     .copyrights{
         font-size: .7rem;
     }
@@ -777,18 +747,12 @@ html{
         list-style: none;
         padding: .2rem .2rem;
     }
-}
+} */
 
 /* Max width 300px */
-@media(max-width: 380px){
+/* @media(max-width: 380px){
     .nav{
         width: 100%;
-    }
-    .logo-text{
-        font-size: .7rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
     .navbar{
         width: 70%;
@@ -808,4 +772,4 @@ html{
     .copyrights{
         font-size: .6rem;
     }
-}
+} */

@@ -20,17 +20,22 @@
     <body>
         <!-- Header Part -->
         <header class="header" id="header">
+            <!-- Nav element -->
             <nav class="nav">
+                <!-- Logo element -->
                 <div class="logo">
-                    <!-- <a class="logo-text" href="#">devWorks</a> -->
+                    <!-- Logo Image -->
                     <img class="logo-img" src="./logos/Dev works_3.jpg" alt="deven_logo" />
                 </div>
-                <div class="navbar">
-                    <ul class="ul">
+                <!-- Navbar element with Links -->
+                <div class="navbar" id="navbar">
+                    <ul class="ul" id="ul">
                         <li class="links"><a class="link" href="#ABOUT">ABOUT</a></li>
                         <li class="links"><a class="link" href="#PROJECTS">PROJECTS</a></li>
                         <li class="links"><a class="link" href="#BLOGS">BLOGS</a></li>
                     </ul>
+                </div>
+                    <!-- Dark and Light theme -->
                     <div class="theme_changer">
                         <input type="checkbox" id="checkbox" class="checkbox" />
                         <label for="checkbox" class="label" id="label">
@@ -39,17 +44,21 @@
                             <div class="ball"></div>
                         </label>
                     </div>
-                </div>
             </nav>
+            <div class="burger" id="burger">
+                <i  class="fa fa-bars" aria-hidden="true"></i>
+              </div>
         </header>
         
         <!-- Main Content Part -->
         <main class="main" id="main">
             <!-- ABOUT PAGE -->
             <section id="ABOUT" class="content about-section">
+                <!-- About image -->
                 <div class="about-img">
                     <img id="profileImg" class="profileImg" src="./logos/deven.jpeg" alt="Deven's Profile Picture">
                 </div>
+                <!-- About content -->
                 <div class="wrapper">
                     <div class="about-text">
                     <p id="about-title" class="about-title"> Hey There, I'm Deven Umrania</p>
@@ -108,12 +117,13 @@
                             <p>CSS consists various selectors(id, class, etc...)</p>
                         </div>
                     </a>
-                        <a target="_blank" href="https://umraniadeven10.hashnode.dev/my-journey-for-becoming-a-web-developer" id="blog-2" class="blogs">
-                            <div class="blog-title">
-                                <h3>How did i started Web Dev</h3>
-                                <p>Checkout my story of begining into Web Dev...</p>
-                            </div>
-                        </a>
+
+                    <a target="_blank" href="https://umraniadeven10.hashnode.dev/my-journey-for-becoming-a-web-developer" id="blog-2" class="blogs">
+                        <div class="blog-title">
+                            <h3>How did i started Web Dev</h3>
+                            <p>Checkout my story of begining into Web Dev...</p>
+                        </div>
+                    </a>
                        
                     <a id="viewAllBlogs" target="_blank" href="blogs.html" class="viewAllBlogs">Read All blogs</a> 
                     
