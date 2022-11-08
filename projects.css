@@ -160,14 +160,14 @@ header{
     align-items: center;
     width:100%;
     margin:auto;
-    height:480vh;  /*auto to be use*/
+    height:510vh;  /*auto to be use*/
     background-color: #EBF9FE;
 }
 
 /* PROJECTS SECTION */
 #project{
     width: 90%;
-    height: 480vh; /*auto to be use*/
+    height: 510vh; /*auto to be use*/
     margin: auto;
     padding: 1.1rem .5rem;
     display: flex;
