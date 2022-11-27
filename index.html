@@ -30,13 +30,11 @@
                 <!-- Navbar element with Links -->
                 <div class="navbar" id="navbar">
                     <ul class="ul" id="ul">
-                        <li class="links"><a class="link" href="#ABOUT">ABOUT</a></li>
                         <li class="links"><a class="link" href="./projects.html">PROJECTS</a></li>
                         <li class="links"><a class="link" href="./blogs.html">BLOGS</a></li>
                     </ul>
-                </div>
                     <!-- Dark and Light theme -->
-                    <div class="theme_changer">
+                     <div class="theme_changer">
                         <input type="checkbox" id="checkbox" class="checkbox" />
                         <label for="checkbox" class="label" id="label">
                             <i class="fa fa-moon-o moon" aria-hidden="true"></i>
@@ -44,6 +42,8 @@
                             <div class="ball"></div>
                         </label>
                     </div>
+                </div>
+ 
             </nav>
             <div class="burger" id="burger">
                 <i  class="fa fa-bars" aria-hidden="true"></i>
@@ -51,7 +51,7 @@
         </header>
         
         <!-- Main Content Part -->
-        <main class="main" id="main">
+        <div class="mainSection" id="main">
             <!-- ABOUT PAGE -->
             <section id="ABOUT" class="content about-section">
                 <!-- About image -->
@@ -72,7 +72,7 @@
             </section>
 
             <!-- Line break between two sections -->
-            <hr  class="sectionBorderBottom">
+            <div class="sectionBorderBottomOne"></div>
            
 
             <!-- PROJECTS PAGE -->
@@ -86,8 +86,8 @@
                             <p>Talk in Banana language using this app.</p>
                         </div>
                         <div class="project-btn">
-                            <a target="_blank" href="https://talk-in-banana-language.netlify.app/" id="btn-project">Live Demo</a>
-                            <a target="_blank" href="https://github.com/deven10/Banana_Translator_JS_App" id="btn-project">View Code</a>
+                            <a target="_blank" href="https://talk-in-banana-language.netlify.app/" class="btn-project">Live Demo</a>
+                            <a target="_blank" href="https://github.com/deven10/Banana_Translator_JS_App" class="btn-project">View Code</a>
                         </div>
                     </div>
                     <!-- Project 2 -->
@@ -97,8 +97,8 @@
                             <p>Communicate now with NA'VI people through this app.</p>
                         </div>
                         <div class="project-btn">
-                            <a target="_blank" href="https://talk-like-navi-people.netlify.app/" id="btn-project">Live Demo</a>
-                            <a target="_blank" href="https://github.com/deven10/Speak_with_The_Navi_People" id="btn-project">View Code</a>
+                            <a target="_blank" href="https://talk-like-navi-people.netlify.app/" class="btn-project">Live Demo</a>
+                            <a target="_blank" href="https://github.com/deven10/Speak_with_The_Navi_People" class="btn-project">View Code</a>
                         </div>
                     </div>
                         <a id="viewAllProjects" target="_blank" href="projects.html" class="viewAllProjects">View All Projects</a>      
@@ -106,7 +106,7 @@
             </section>
 
             <!-- Line break between two sections -->
-            <hr  class="sectionBorderBottom">
+            <div class="sectionBorderBottomTwo"></div>
 
             <!-- BLOG PAGE -->
             <section id="BLOGS" class="content blogs-section">
@@ -130,7 +130,7 @@
                 </div>
            
             </section>
-        </main>
+        </div>
 
         <!-- Footer Part -->
         <footer>
