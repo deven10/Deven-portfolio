@@ -63,22 +63,24 @@ html{
 
 /* Navbar element */
 .navbar{
-    width: 50%;
     color:white;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     align-items: center;
     /* background-color: yellow; */
 }
 
 .navbar .ul{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     align-items: center;
-    width: 80%;
+    /* width: 0%; */
+    /* background-color: pink; */
 }
 
 .navbar .ul .links{
+    /* background-color: yellow; */
+    margin-left: 20px;
     list-style: none;
 }
 
@@ -101,7 +103,9 @@ html{
 
 /* NAVBAR - Theme Changer */
 .theme_changer{
+    margin-left: 20px;
     width: 50px;
+    /* background-color: red; */
 }
 
 .label{
@@ -160,14 +164,14 @@ html{
   }
 
 /* MAIN */
-.main{
+.mainSection{
     background-color: #EBF9FE;
+    /* background-color: red; */
 }
-
-.mainDark{
-    /* background-color: #222222; */
-    background-color: red;
-    color: blue;
+ 
+.mainSectionDark{
+     background-color: #222222;
+     /* background-color: pink; */
 }
 
 /* Section Part */
@@ -202,6 +206,7 @@ html{
     border-top-left-radius: 5px;
     border-top-right-radius: 50px;
     max-width: 100%;
+    object-fit: cover;
 }
 .profileImgDark{
     border:2px solid white;
@@ -296,16 +301,16 @@ html{
 
 /* Designing Line Divider between Sections */
 
-.sectionBorderBottom{
+.sectionBorderBottomOne, .sectionBorderBottomTwo{
     width: 80%;
-    border:3px;
+    border-radius:3px;
     height: 5px;
     background-color: black;
     margin: auto;
     box-shadow: none;
 }
-.sectionBorderBottomDark{
-    border:3px solid white;
+.sectionBorderBottomOneDark, .sectionBorderBottomTwoDark{
+    background-color: #EBF9FE;
 }
 
 /* PROJECTS SECTION */
@@ -358,7 +363,7 @@ html{
     font-size:1.1rem;
 }
 
-#btn-project{
+.btn-project{
     background-color: transparent;
     border:2px solid white;
     border-radius: 5px;
@@ -372,7 +377,7 @@ html{
     text-decoration: none;
 }
 
-#btn-project:hover{
+.btn-project:hover{
         transition: 1s ease;
         color:white;
         border:2px solid white;
@@ -552,12 +557,16 @@ html{
         width: 95%;
         justify-content: space-between;
         max-width: 100%;
-        /* background-color: pink; */
     }
+
+    .logo-img{
+        height: 80px;
+        width: 150px;
+    }
+
     .navbar{
         width: 65%;
         text-align: right;
-        /* background-color: green; */
     }
     .about-section{
         flex-direction: column;
@@ -571,7 +580,7 @@ html{
         width:450px;
     }
 
-    #btn-project{
+    .btn-project{
         width: 40%;
         font-size: 1.2rem;
         padding:.5rem 2rem;
@@ -579,32 +588,19 @@ html{
     }
   }
 
-  /* Max width 890px
-  @media(max-width: 890px){
-    .nav{
-        width: 95%;
-        justify-content: space-between;
-    }
-    .navbar{
-        text-align: right;
-    }
-    
-  } */
-
 /* Max width 750px */
 @media(max-width: 750px) {
     .nav{
         width: 85%;
         justify-content: space-between;
     }
-    .ul{
+    .navbar .ul{
         display:flex;
         flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
         position:absolute;
         margin-bottom: 10px;
-         /* justify-content: space-around; */
-        /* align-items: center; */
-        /* background-color: red; */
         background-color: #045daa;
         opacity: 0.9;
         z-index: 2;
@@ -619,46 +615,22 @@ html{
         left:0%;
     } 
 
-    .navbar .ul .links .link{
-        text-decoration: none;
-        color:white;
-        background-color: transparent;
-        padding: 1rem 2rem;
-        border: 2px solid white;
-        border-radius: 10px;
-        letter-spacing: 1px;
-        cursor: pointer;
-        font-size: 26px;
-        box-shadow: rgba(255, 255, 255, 0.25) 0px 25px 50px -12px;
-    }
-
-    /* 
-
-
-    .navbar .ul .links .link{
-        text-decoration: none;
-        color:white;
-        background-color: transparent;
-        padding: .5rem 1rem;
-        border: 2px solid white;
-        border-radius: 10px;
-        letter-spacing: 1px;
-        cursor: pointer;
-    }
-
-    .navbar .ul .links .link:hover{
-        border-radius: 0px;
-        transition: 0.5s ease-in;
-        background-color:#1877F2;
-    }
-        
-    */
-
-
-    /* .navbar .ul{
-        justify-content: space-evenly;
+    .navbar .ul .links{
         width: 80%;
-    } */
+    }
+    .navbar .ul .links .link{
+        text-decoration: none;
+        color:white;
+        background-color: transparent;
+        padding: 0.6rem 1rem;
+        border: 2px solid white;
+        border-radius: 10px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        font-size: 20px;
+        box-shadow: rgba(255, 255, 255, 0.25) 0px 25px 50px -12px;
+        margin: 15px auto;
+    }
 
     .theme_changer{
         margin-right: 40px;
@@ -669,107 +641,148 @@ html{
         z-index: 100;
     }
 
-  }
-
-  @media(max-width: 750px){
-    
-  }
-
-/* Max width 500px */
-/* @media(max-width: 500px) {
-    .nav{
-       width:100%;
-       justify-content: space-around;
-       max-width: 100%;
-    }
-    .logo{
-        padding:.4rem;
-    }
-    .navbar{
-        width:60%;
-        font-size:.5rem;
-    }
-    .about-img .profile-img{
-        width: 16rem;
-        height: 18rem;
-    }
-    .about-text{
-        display:flex;
-        flex-direction: column;
-        width: 80%;
-    }
-    .about-text .about-title{
-        font-size: 1.20rem;
+    .profileImg{
+        margin: auto;
+        height: 350px;
+        width:350px;
     }
 
-    .about-description{
-        font-size: .8rem;
-    }
-    .about-description-bg{
-        font-size: .7rem;
-    }
     .project-text{
-        line-height: 1.1rem;
+        line-height: 1.5rem;
     }
-
+    
     .project-text h3{
-        font-size: .8rem;
-    }
-    .project-text p{
-        font-size: .6rem;
-    }
-    .project-btn{
-        width: 80%;
-        display: flex;
-        flex-direction: row;
+        font-size:1.1rem;
     }
 
-    #btn-project{
+    .project-text p{
+        font-size:0.9rem;
+    }
+
+    .btn-project{
         width: 40%;
-        font-size: .6rem;
-        padding:.2rem;
-        margin:.2rem auto;   
+        font-size: 0.9rem;
+        padding:.4rem 1.6rem;
+        margin: auto .4rem;
     }
 
     .blog-title{
-        line-height: 1.1rem;
+        font-size:1rem;
     }
-    .blog-title h3{
-        font-size: .8rem;
-    }
-    .blog-title p{
-        font-size: .6rem;
-    }
-    .copyrights{
-        font-size: .7rem;
-    }
-    .links li{
-        list-style: none;
-        padding: .2rem .2rem;
-    }
-} */
+  }
 
-/* Max width 300px */
-/* @media(max-width: 380px){
-    .nav{
-        width: 100%;
+  @media(max-width: 500px){
+    .logo-img{
+        height: 70px;
+        width: 130px;
     }
-    .navbar{
-        width: 70%;
+
+    .profileImg{
+        margin: auto;
+        height: 325px;
+        width:325px;
     }
-    .navbar ul{
-        width: 100%;
+
+    .about-text{
+        padding: 1.2rem 0.8rem;
+        line-height: 1.3rem; 
     }
+    
+    .about-title{
+        font-size:1.2rem;
+    }
+    
     .about-description{
-        font-size: .7rem;
+        font-size:1rem;
     }
+
     .about-description-bg{
-        font-size: .5rem;
+        padding:2px 4px;
+        letter-spacing: 0.8px;
     }
-    .project-btn{
-        margin:.1rem auto;
+
+    .resume_file{
+        width: 55%;
+        font-size: 14px;
+        font-weight: 500;
     }
-    .copyrights{
-        font-size: .6rem;
+
+    /*  */
+    .project-text{
+        line-height: 1.2rem;
     }
-} */
+    
+    .project-text h3{
+        font-size:0.9rem;
+    }
+
+    .project-text p{
+        font-size:0.7rem;
+        width: 90%;
+        margin: auto;
+    }
+
+    .btn-project{
+        width: 40%;
+        font-size: 0.7rem;
+        padding:.4rem 1.2rem;
+        margin: auto .4rem;
+    }
+
+    .blog-title{
+        font-size:0.8rem;
+    }
+
+  }
+
+  @media(max-width: 405px){
+    .profileImg{
+        margin: auto;
+        height: 300px;
+        width:300px;
+    }
+
+    .about-text{
+        padding: 1rem 0.6rem;
+        line-height: 1.1rem; 
+    }
+    
+    .about-title{
+        font-size:1rem;
+    }
+    
+    .about-description{
+        font-size:0.7rem;
+    }
+
+    .resume_file{
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+
+    /*  */
+    .project-text{
+        line-height: 1rem;
+    }
+    
+    .project-text h3{
+        font-size:0.9rem;
+    }
+
+    .project-text p{
+        font-size:0.7rem;
+        width: 90%;
+        margin: auto;
+    }
+
+    .btn-project{
+        width: 40%;
+        font-size: 0.7rem;
+        padding:.35rem 0.9rem;
+        margin: auto .3rem;
+    }
+
+    .blog-title{
+        font-size:0.8rem;
+    }
+  }
