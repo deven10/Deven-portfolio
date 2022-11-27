@@ -766,23 +766,23 @@ html{
     }
     
     .project-text h3{
-        font-size:0.9rem;
+        font-size:0.8rem;
     }
 
     .project-text p{
-        font-size:0.7rem;
+        font-size:0.6rem;
         width: 90%;
         margin: auto;
     }
 
     .btn-project{
         width: 40%;
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         padding:.35rem 0.9rem;
         margin: auto .3rem;
     }
 
     .blog-title{
-        font-size:0.8rem;
+        font-size:0.7rem;
     }
   }
