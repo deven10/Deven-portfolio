@@ -51,7 +51,6 @@ html{
     border-radius: 50%;
     border: 3px solid white;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    /* background-color: yellow;  */
     cursor: pointer;
 }
 
@@ -669,6 +668,12 @@ html{
     .blog-title{
         font-size:1rem;
     }
+    .copyrights{
+        font-size: 1.1rem;
+    }
+    .links li{
+        padding: .2rem .2rem;
+    }
   }
 
   @media(max-width: 500px){
@@ -732,7 +737,13 @@ html{
     .blog-title{
         font-size:0.8rem;
     }
-
+    .copyrights{
+        font-size: .7rem;
+    }
+    .links li{
+        list-style: none;
+        padding: .2rem .2rem;
+    }
   }
 
   @media(max-width: 405px){
