@@ -39,7 +39,6 @@ header{
 /* If needed add transition on logo */
 .logo-img:hover{
     transition: 0.5s ease-in-out;
-    /* color:rgb(255, 255, 255); */
     box-shadow: rgb(226, 230, 235) 0px 20px 30px -10px;
 }
 
@@ -256,6 +255,12 @@ main{
         padding:.4rem 1.6rem;
         margin: auto .4rem;
     }
+    .copyrights{
+        font-size: 1.1rem;
+    }
+    .links li{
+        padding: .2rem .2rem;
+    }
   }
 
   @media(max-width: 625px){
@@ -280,6 +285,12 @@ main{
         padding:.4rem 1.6rem;
         margin: auto .4rem;
     }
+    .copyrights{
+        font-size: 1rem;
+    }
+    .links li{
+        padding: .2rem .2rem;
+    }
   }
 
   @media(max-width: 565px){
@@ -287,6 +298,11 @@ main{
     .logo-img{
         height: 70px;
         width: 130px;
+    }
+
+    .navbar{
+        width:30%;
+        font-size:.9rem;
     }
 
     .navbar ul{
@@ -318,5 +334,12 @@ main{
         font-size: 0.6rem;
         padding:.3rem 0.8rem;
         margin: auto .3rem;
+    }
+    .copyrights{
+        font-size: .7rem;
+    }
+    .links li{
+        list-style: none;
+        padding: .2rem .2rem;
     }
   }
